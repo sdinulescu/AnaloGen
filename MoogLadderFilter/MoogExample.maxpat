@@ -40,11 +40,23 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-5",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 13.5, 23.0, 202.0, 47.0 ],
+					"text" : "Moog Ladder Filter\nImplemented by Stejara Dinulescu\n10/28/2020, updated 11/05/2020"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 22.5, 61.0, 109.0, 20.0 ],
+					"patching_rect" : [ 20.5, 126.33014623172113, 109.0, 20.0 ],
 					"text" : "Moog Ladder Filter"
 				}
 
@@ -67,7 +79,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1083.0, 476.051359516616628, 101.0, 100.0 ],
+					"patching_rect" : [ 1083.0, 476.051359516616628, 103.0, 100.0 ],
 					"text" : "0.5 default value: \n6-db pass-band gain decrease at maximum resonance\n1.0: 12-db model (original Moog)"
 				}
 
@@ -141,7 +153,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 577.0, 621.051359516616685, 107.0, 20.0 ],
+					"patching_rect" : [ 724.25, 247.051359516616685, 107.0, 20.0 ],
 					"text" : "starts the gain at 0"
 				}
 
@@ -166,7 +178,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 688.5, 621.051359516616685, 29.5, 22.0 ],
+					"patching_rect" : [ 688.5, 247.051359516616685, 29.5, 22.0 ],
 					"text" : "0"
 				}
 
@@ -2989,7 +3001,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 22.5, 369.555296524490529, 189.0, 33.0 ],
+					"patching_rect" : [ 20.5, 434.88544275621166, 189.0, 33.0 ],
 					"text" : "Compromised One-Pole Filter -> within Moog filter (LP)"
 				}
 
@@ -3001,7 +3013,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.5, 12.551359516616628, 570.315789473684163, 33.0 ],
+					"patching_rect" : [ 13.5, 77.881505748337759, 570.315789473684163, 33.0 ],
 					"text" : "Implementation of a Moog Filter: Välimäki, Vesa & Huovilainen, Antti. (2006). Oscillator and Filter Algorithms for Virtual Analog Synthesis. Computer Music Journal. 30. 19-31. 10.1162/comj.2006.30.2.19. "
 				}
 
@@ -3017,7 +3029,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 15.5, 359.051359516616628, 652.290229885057329, 255.339707536557853 ],
+					"patching_rect" : [ 13.5, 424.381505748337759, 652.290229885057329, 255.339707536557853 ],
 					"pic" : "Macintosh HD:/Users/stejaraiulia/GitHub/ANLGen/CompromisedOnePole.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 738.854885057471392, 34.0, 652.290229885057329, 255.339707536557853 ]
@@ -3035,7 +3047,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 15.5, 51.102719033232631, 652.290229885057329, 299.541132756884338 ],
+					"patching_rect" : [ 13.5, 116.432865264953762, 652.290229885057329, 299.541132756884338 ],
 					"pic" : "Macintosh HD:/Users/stejaraiulia/GitHub/ANLGen/MoogLadderFilter.png",
 					"presentation" : 1,
 					"presentation_rect" : [ 738.854885057471392, 305.282900438049523, 652.315789473684163, 299.552870090634428 ]
@@ -3232,21 +3244,7 @@
 
 			}
  ],
-		"dependency_cache" : [ 			{
-				"name" : "MoogLadderFilter.png",
-				"bootpath" : "~/GitHub/ANLGen",
-				"patcherrelativepath" : ".",
-				"type" : "PNG",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "CompromisedOnePole.png",
-				"bootpath" : "~/GitHub/ANLGen",
-				"patcherrelativepath" : ".",
-				"type" : "PNG",
-				"implicit" : 1
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
 
