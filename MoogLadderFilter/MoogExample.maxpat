@@ -46,6 +46,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 13.5, 23.0, 202.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 20.5, 19.0, 202.0, 47.0 ],
 					"text" : "Moog Ladder Filter\nImplemented by Stejara Dinulescu\n10/28/2020, updated 11/05/2020"
 				}
 
@@ -92,7 +95,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1012.875, 449.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 525.875, 34.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 497.875, 84.0, 150.0, 20.0 ],
 					"text" : "pass-band gain constant"
 				}
 
@@ -105,7 +108,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 930.5, 449.0, 65.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 443.5, 34.0, 65.0, 20.0 ],
+					"presentation_rect" : [ 415.5, 84.0, 65.0, 20.0 ],
 					"text" : "resonance"
 				}
 
@@ -118,7 +121,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 849.0, 557.0, 104.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 325.0, 34.0, 104.0, 20.0 ],
+					"presentation_rect" : [ 297.0, 84.0, 104.0, 20.0 ],
 					"text" : "desired frequency"
 				}
 
@@ -142,7 +145,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 801.0, 669.0, 31.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 264.75, 34.0, 31.0, 20.0 ],
+					"presentation_rect" : [ 236.75, 84.0, 31.0, 20.0 ],
 					"text" : "gain"
 				}
 
@@ -166,7 +169,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1282.5, 563.051359516616685, 63.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 49.0, 34.0, 63.0, 20.0 ],
+					"presentation_rect" : [ 21.0, 84.0, 63.0, 20.0 ],
 					"text" : "A B C D E"
 				}
 
@@ -227,7 +230,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 766.75, 826.051359516616685, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 190.875, 328.0, 198.75, 198.75 ]
+					"presentation_rect" : [ 236.875, 343.0, 198.75, 198.75 ]
 				}
 
 			}
@@ -242,7 +245,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 766.75, 667.051359516616685, 22.0, 140.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 264.75, 56.0, 51.0, 206.0 ]
+					"presentation_rect" : [ 236.75, 106.0, 51.0, 206.0 ]
 				}
 
 			}
@@ -259,7 +262,7 @@
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 849.0, 581.051359516616685, 56.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 325.0, 56.0, 56.0, 22.0 ],
+					"presentation_rect" : [ 297.0, 106.0, 56.0, 22.0 ],
 					"sig" : 484.0
 				}
 
@@ -286,7 +289,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 1012.875, 476.051359516616628, 60.0, 60.000000000000057 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 525.875, 56.0, 60.0, 60.000000000000057 ]
+					"presentation_rect" : [ 497.875, 106.0, 60.0, 60.000000000000057 ]
 				}
 
 			}
@@ -311,7 +314,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1219.5, 69.051359516616628, 55.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 49.0, 59.0, 55.0, 22.0 ],
+					"presentation_rect" : [ 21.0, 109.0, 55.0, 22.0 ],
 					"text" : "0 0 1 0 0"
 				}
 
@@ -324,7 +327,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1294.5, 247.051359516616628, 111.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 124.0, 240.0, 111.0, 20.0 ],
+					"presentation_rect" : [ 96.0, 290.0, 111.0, 20.0 ],
 					"text" : "four-pole high-pass"
 				}
 
@@ -337,7 +340,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1294.5, 212.051359516616628, 109.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 124.0, 206.0, 109.0, 20.0 ],
+					"presentation_rect" : [ 96.0, 256.0, 109.0, 20.0 ],
 					"text" : "two-pole high-pass"
 				}
 
@@ -350,7 +353,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1294.5, 175.051359516616628, 115.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 124.0, 169.0, 115.0, 20.0 ],
+					"presentation_rect" : [ 96.0, 219.0, 115.0, 20.0 ],
 					"text" : "four-pole band-pass"
 				}
 
@@ -363,7 +366,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1294.5, 139.051359516616628, 113.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 124.0, 131.0, 113.0, 20.0 ],
+					"presentation_rect" : [ 96.0, 181.0, 113.0, 20.0 ],
 					"text" : "two-pole band-pass"
 				}
 
@@ -376,7 +379,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1294.5, 104.051359516616628, 107.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 124.0, 96.0, 107.0, 20.0 ],
+					"presentation_rect" : [ 96.0, 146.0, 107.0, 20.0 ],
 					"text" : "four-pole low-pass"
 				}
 
@@ -389,7 +392,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1294.5, 69.051359516616628, 104.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 124.0, 59.0, 104.0, 20.0 ],
+					"presentation_rect" : [ 96.0, 109.0, 104.0, 20.0 ],
 					"text" : "two-pole low pass"
 				}
 
@@ -403,7 +406,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1219.5, 247.051359516616628, 63.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 49.0, 240.0, 63.0, 22.0 ],
+					"presentation_rect" : [ 21.0, 290.0, 63.0, 22.0 ],
 					"text" : "1 -4 6 -4 1"
 				}
 
@@ -417,7 +420,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1219.5, 212.051359516616628, 59.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 49.0, 206.0, 59.0, 22.0 ],
+					"presentation_rect" : [ 21.0, 256.0, 59.0, 22.0 ],
 					"text" : "1 -2 1 0 0"
 				}
 
@@ -431,7 +434,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1219.5, 175.051359516616628, 59.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 49.0, 169.0, 59.0, 22.0 ],
+					"presentation_rect" : [ 21.0, 219.0, 59.0, 22.0 ],
 					"text" : "0 0 4 -8 4"
 				}
 
@@ -445,7 +448,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1219.5, 139.051359516616628, 59.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 49.0, 131.0, 59.0, 22.0 ],
+					"presentation_rect" : [ 21.0, 181.0, 59.0, 22.0 ],
 					"text" : "0 2 -2 0 0"
 				}
 
@@ -459,7 +462,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1219.5, 104.051359516616628, 55.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 49.0, 96.0, 55.0, 22.0 ],
+					"presentation_rect" : [ 21.0, 146.0, 55.0, 22.0 ],
 					"text" : "0 0 0 0 1"
 				}
 
@@ -485,7 +488,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 930.5, 476.051359516616628, 60.0, 60.000000000000057 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 443.5, 56.0, 60.0, 60.000000000000057 ]
+					"presentation_rect" : [ 415.5, 106.0, 60.0, 60.000000000000057 ]
 				}
 
 			}
@@ -3030,9 +3033,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 13.5, 424.381505748337759, 652.290229885057329, 255.339707536557853 ],
-					"pic" : "Macintosh HD:/Users/stejaraiulia/GitHub/ANLGen/CompromisedOnePole.png",
-					"presentation" : 1,
-					"presentation_rect" : [ 738.854885057471392, 34.0, 652.290229885057329, 255.339707536557853 ]
+					"pic" : "Macintosh HD:/Users/stejaraiulia/GitHub/ANLGen/CompromisedOnePole.png"
 				}
 
 			}
@@ -3048,9 +3049,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
 					"patching_rect" : [ 13.5, 116.432865264953762, 652.290229885057329, 299.541132756884338 ],
-					"pic" : "Macintosh HD:/Users/stejaraiulia/GitHub/ANLGen/MoogLadderFilter.png",
-					"presentation" : 1,
-					"presentation_rect" : [ 738.854885057471392, 305.282900438049523, 652.315789473684163, 299.552870090634428 ]
+					"pic" : "Macintosh HD:/Users/stejaraiulia/GitHub/ANLGen/MoogLadderFilter.png"
 				}
 
 			}
