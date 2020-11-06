@@ -742,7 +742,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 293.0, 645.0, 300.0, 100.0 ]
+					"patching_rect" : [ 293.0, 645.0, 300.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 105.333333333333314, 274.0, 300.0, 100.0 ]
 				}
 
 			}
@@ -753,7 +755,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 293.0, 521.0, 300.0, 100.0 ]
+					"patching_rect" : [ 293.0, 521.0, 300.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 105.333333333333314, 147.0, 300.0, 100.0 ]
 				}
 
 			}
@@ -764,6 +768,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 433.0, 368.0, 57.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 304.0, 85.0, 57.0, 20.0 ],
 					"text" : "filter type"
 				}
 
@@ -775,6 +781,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 333.333333333333371, 368.0, 63.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 204.333333333333371, 85.0, 63.0, 20.0 ],
 					"text" : "bandwidth"
 				}
 
@@ -793,6 +801,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 334.666666666666629, 394.0, 56.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 205.666666666666629, 111.0, 56.0, 22.0 ],
 					"sig" : 18.100000000000001
 				}
 
@@ -806,7 +816,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 435.0, 394.0, 100.0, 22.0 ]
+					"patching_rect" : [ 435.0, 394.0, 100.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 306.0, 111.0, 100.0, 22.0 ]
 				}
 
 			}
@@ -829,7 +841,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 233.666666666666686, 355.0, 78.0, 33.0 ],
-					"text" : "cutoff/center \nfrequency"
+					"presentation" : 1,
+					"presentation_rect" : [ 31.333333333333314, 85.0, 130.0, 20.0 ],
+					"text" : "cutoff/center frequency"
 				}
 
 			}
@@ -847,6 +861,8 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 234.333333333333314, 394.0, 56.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 105.333333333333314, 111.0, 56.0, 22.0 ],
 					"sig" : 7258.0
 				}
 
@@ -893,7 +909,9 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 133.0, 645.0, 100.0, 100.0 ]
+					"patching_rect" : [ 133.0, 645.0, 100.0, 100.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 35.0, 402.0, 100.0, 100.0 ]
 				}
 
 			}
@@ -906,7 +924,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 134.0, 481.0, 22.0, 140.0 ]
+					"patching_rect" : [ 134.0, 481.0, 22.0, 140.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 35.0, 147.0, 38.0, 227.0 ]
 				}
 
 			}
@@ -996,6 +1016,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 29.0, 9.0, 198.0, 47.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 29.0, 9.0, 198.0, 47.0 ],
 					"text" : "Butterworth Filter\nImplemented by Stejara Dinulescu\n11/05/2020"
 				}
 
