@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2014.0, 96.0, 1234.0, 895.0 ],
+		"rect" : [ 1840.0, 89.0, 1726.0, 895.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -46,7 +46,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 507.0, 296.0, 50.0, 22.0 ]
+					"patching_rect" : [ 591.0, 282.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -57,7 +57,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 507.0, 333.0, 43.0, 22.0 ],
+					"patching_rect" : [ 591.0, 319.0, 43.0, 22.0 ],
 					"text" : "cycle~"
 				}
 
@@ -69,7 +69,7 @@
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 691.0, 734.0, 379.0, 129.0 ]
+					"patching_rect" : [ 784.0, 654.0, 379.0, 129.0 ]
 				}
 
 			}
@@ -83,7 +83,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 898.5, 373.0, 50.0, 22.0 ]
+					"patching_rect" : [ 982.5, 359.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -432,7 +432,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 572.0, 425.0, 50.5, 22.0 ],
+					"patching_rect" : [ 656.0, 411.0, 50.5, 22.0 ],
 					"text" : "gen~"
 				}
 
@@ -450,7 +450,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
-					"patching_rect" : [ 1061.749999999999773, 373.0, 56.0, 22.0 ],
+					"patching_rect" : [ 1145.749999999999773, 359.0, 56.0, 22.0 ],
 					"sig" : 108.400000000000006
 				}
 
@@ -462,7 +462,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 691.0, 609.0, 300.0, 100.0 ]
+					"patching_rect" : [ 784.0, 539.0, 300.0, 100.0 ]
 				}
 
 			}
@@ -473,7 +473,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 691.0, 489.0, 300.0, 100.0 ]
+					"patching_rect" : [ 784.0, 427.0, 300.0, 100.0 ]
 				}
 
 			}
@@ -483,7 +483,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 15.0, 246.0, 196.0, 20.0 ],
+					"patching_rect" : [ 15.0, 239.0, 196.0, 20.0 ],
 					"text" : "https://arxiv.org/pdf/2002.03130.pdf"
 				}
 
@@ -499,7 +499,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 15.0, 276.0, 385.076225045372098, 445.750000000000114 ],
+					"patching_rect" : [ 15.0, 263.0, 467.076225045372098, 540.670168067226996 ],
 					"pic" : "Macintosh HD:/Users/stejaraiulia/GitHub/ANLGen/ChebyshevFilter/ChebyshevDigitalFilter-Paper.png"
 				}
 
@@ -511,7 +511,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 432.0, 441.0, 29.5, 22.0 ],
+					"patching_rect" : [ 516.0, 421.0, 29.5, 22.0 ],
 					"text" : "0"
 				}
 
@@ -523,7 +523,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 432.0, 373.0, 58.0, 22.0 ],
+					"patching_rect" : [ 516.0, 359.0, 58.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -534,7 +534,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 572.0, 345.0, 69.0, 20.0 ],
+					"patching_rect" : [ 656.0, 331.0, 69.0, 20.0 ],
 					"text" : "input signal"
 				}
 
@@ -545,7 +545,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1061.749999999999773, 345.0, 94.0, 20.0 ],
+					"patching_rect" : [ 1145.749999999999773, 331.0, 94.0, 20.0 ],
 					"text" : "cutoff frequency"
 				}
 
@@ -556,7 +556,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 476.0, 84.0, 344.0, 20.0 ],
+					"patching_rect" : [ 504.0, 84.0, 344.0, 20.0 ],
 					"text" : "Chebyshev Filter: https://en.wikipedia.org/wiki/Chebyshev_filter"
 				}
 
@@ -572,7 +572,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 476.0, 111.0, 690.899082568807444, 113.415662650602414 ],
+					"patching_rect" : [ 504.0, 111.0, 747.899082568807444, 122.772590361445793 ],
 					"pic" : "/Users/stejaraiulia/Desktop/Screen Shot 2020-11-08 at 6.39.45 PM.png"
 				}
 
@@ -583,7 +583,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 898.5, 345.0, 71.0, 20.0 ],
+					"patching_rect" : [ 982.5, 331.0, 71.0, 20.0 ],
 					"text" : "ripple factor"
 				}
 
@@ -597,7 +597,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 735.25, 373.0, 54.0, 22.0 ]
+					"patching_rect" : [ 819.25, 359.0, 54.0, 22.0 ]
 				}
 
 			}
@@ -608,7 +608,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 696.0, 291.0, 157.0, 74.0 ],
+					"patching_rect" : [ 780.0, 277.0, 157.0, 74.0 ],
 					"text" : "nth Chebyshev polynomial\nNote: in audio, n = 1 is the Chebyshev filter type 1 and n = 2 is the inverse Chebyshev filter "
 				}
 
@@ -619,7 +619,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 572.0, 664.0, 45.0, 45.0 ]
+					"patching_rect" : [ 656.0, 650.0, 45.0, 45.0 ]
 				}
 
 			}
@@ -632,7 +632,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 572.0, 496.0, 22.0, 140.0 ]
+					"patching_rect" : [ 656.0, 482.0, 22.0, 140.0 ]
 				}
 
 			}
@@ -643,7 +643,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 572.0, 373.0, 44.0, 22.0 ],
+					"patching_rect" : [ 656.0, 359.0, 44.0, 22.0 ],
 					"text" : "noise~"
 				}
 
@@ -670,7 +670,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 15.0, 111.0, 451.0, 112.09064327485379 ],
+					"patching_rect" : [ 15.0, 111.0, 467.094117647058795, 116.09064327485379 ],
 					"pic" : "/Users/stejaraiulia/Desktop/Screen Shot 2020-11-08 at 6.35.02 PM.png"
 				}
 
@@ -691,12 +691,12 @@
 				"box" : 				{
 					"bgcolor" : [ 0.749019607843137, 0.192156862745098, 0.980392156862745, 0.26 ],
 					"id" : "obj-33",
-					"linecount" : 32,
+					"linecount" : 39,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 419.0, 276.0, 747.899082568807444, 449.0 ],
-					"text" : "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+					"patching_rect" : [ 503.0, 262.0, 747.899082568807444, 543.0 ],
+					"text" : "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 					"textcolor" : [ 0.129411764705882, 0.129411764705882, 0.129411764705882, 1.0 ]
 				}
 
