@@ -4,10 +4,12 @@ An external for Max/MSP, implementing several common analog filters for audio pr
 ## Filter Types
 - Moog (implemented Oct 28 2020, added Nov 5 2020)
 - Butterworth (implemented Nov 5 2020)
-- Chebyshev
 - Elliptic (Cauer)
 - Bessel
 - Gaussian
 - Optimum "L" (Legendre) filter
 - Linkwitz-Riley
 - Lattice
+
+## Waveshaping
+- Chebyshev polynomials: type I and type II -- inverse (implemented on Nov 8 2020)
