@@ -41,12 +41,12 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-19",
-					"linecount" : 3,
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 270.0, 29.0, 150.0, 47.0 ],
-					"text" : "this should determine how many history objects we have"
+					"patching_rect" : [ 270.0, 29.0, 151.0, 33.0 ],
+					"text" : "this should determine how much delay we have"
 				}
 
 			}
@@ -110,11 +110,11 @@
 				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 31.0, 222.0, 44.0, 22.0 ],
-					"text" : "history"
+					"patching_rect" : [ 31.0, 222.0, 37.0, 22.0 ],
+					"text" : "delay"
 				}
 
 			}
@@ -220,6 +220,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
 					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 1 ],
+					"midpoints" : [ 242.5, 207.0, 58.5, 207.0 ],
+					"source" : [ "obj-5", 0 ]
 				}
 
 			}

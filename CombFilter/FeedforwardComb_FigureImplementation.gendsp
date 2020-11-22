@@ -40,12 +40,24 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-13",
+					"id" : "obj-14",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 200.0, 38.0, 91.0, 20.0 ],
-					"text" : "currently, M = 1"
+					"patching_rect" : [ 223.0, 12.0, 119.0, 20.0 ],
+					"text" : "M (delay in samples)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 223.0, 38.0, 28.0, 22.0 ],
+					"text" : "in 4"
 				}
 
 			}
@@ -65,11 +77,11 @@
 				"box" : 				{
 					"id" : "obj-7",
 					"maxclass" : "newobj",
-					"numinlets" : 1,
+					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 120.0, 105.0, 44.0, 22.0 ],
-					"text" : "history"
+					"patching_rect" : [ 120.0, 105.0, 37.0, 22.0 ],
+					"text" : "delay"
 				}
 
 			}
@@ -198,6 +210,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-5", 1 ],
 					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 1 ],
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
