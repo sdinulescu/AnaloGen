@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1840.0, 89.0, 1726.0, 895.0 ],
+		"rect" : [ 34.0, 89.0, 1612.0, 895.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,43 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-12",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 982.5, 359.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "number",
+					"minimum" : 1,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 825.0, 359.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1260.0, 453.0, 150.0, 20.0 ],
+					"text" : "Need to solve for poles"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-32",
 					"maxclass" : "number",
@@ -75,20 +112,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-21",
-					"maxclass" : "number",
-					"maximum" : 200,
-					"minimum" : 1,
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 982.5, 359.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-10",
 					"maxclass" : "newobj",
 					"numinlets" : 4,
@@ -105,7 +128,7 @@
 						}
 ,
 						"classnamespace" : "dsp.gen",
-						"rect" : [ 1789.0, 216.0, 1105.0, 740.0 ],
+						"rect" : [ 192.0, 184.0, 1105.0, 740.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -177,7 +200,6 @@
 									"numinlets" : 1,
 									"numoutlets" : 0,
 									"patching_rect" : [ 433.0, 171.0, 237.0, 60.0 ],
-									"presentation_linecount" : 4,
 									"text" : "Ripple = 20log10(sqrt(1+ripple_factor^2)\n10 ^ (Ripple/20) = sqrt(1 + ripple_factor^2) \n10^(2 * Ripple/20) = 1+ripple_factor^2\nsqrt(10^(Ripple/10) - 1) = ripple_factor"
 								}
 
@@ -451,7 +473,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "float" ],
 					"patching_rect" : [ 1145.749999999999773, 359.0, 56.0, 22.0 ],
-					"sig" : 108.400000000000006
+					"sig" : 529.0
 				}
 
 			}
@@ -590,31 +612,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-12",
-					"items" : [ 1, ",", 2 ],
-					"maxclass" : "umenu",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "int", "", "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 819.25, 359.0, 54.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-11",
-					"linecount" : 5,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 780.0, 277.0, 157.0, 74.0 ],
-					"text" : "nth Chebyshev polynomial\nNote: in audio, n = 1 is the Chebyshev filter type 1 and n = 2 is the inverse Chebyshev filter "
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-8",
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
@@ -728,15 +725,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 1 ],
-					"source" : [ "obj-12", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-10", 2 ],
-					"source" : [ "obj-21", 0 ]
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -798,15 +788,15 @@
 				}
 
 			}
- ],
-		"dependency_cache" : [ 			{
-				"name" : "ChebyshevDigitalFilter-Paper.png",
-				"bootpath" : "~/GitHub/ANLGen/ChebyshevFilter",
-				"patcherrelativepath" : ".",
-				"type" : "PNG",
-				"implicit" : 1
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 1 ],
+					"source" : [ "obj-9", 0 ]
+				}
+
 			}
  ],
+		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
 
