@@ -960,8 +960,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 29.0, 238.0, 131.0, 20.0 ],
-					"text" : "Butterworth polynomial"
+					"patching_rect" : [ 29.0, 238.0, 215.0, 20.0 ],
+					"text" : "Butterworth polynomial -- second order"
 				}
 
 			}
@@ -1019,7 +1019,7 @@
 					"presentation" : 1,
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 29.0, 9.0, 198.0, 47.0 ],
-					"text" : "Butterworth Filter\nImplemented by Stejara Dinulescu\n11/05/2020"
+					"text" : "Second Order Butterworth Filter\nImplemented by Stejara Dinulescu\n11/05/2020"
 				}
 
 			}

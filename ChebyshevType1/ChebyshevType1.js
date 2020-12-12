@@ -22,6 +22,7 @@ function bang()
 	
 	calcSigma(N, E);
 	calcOmega(N, E);
+	calcTransfer();
 
 	outlet(0, sigma);
 	outlet(1, omega);
@@ -63,6 +64,13 @@ function calcOmega(N, E) { //calculate omega(k)
 	for (var i = 0; i < 2 * N; i++) { //calc sigma(k) values, store in array
 		//this doesn't work. cosh and asinh don't exist apparently?
 		omega[i] = Math.cos( (2 * i - 1) * Math.PI/(2*N) ) * cosh( (1/N) * arcsinh(1/E) );
+	}
+}
+
+function calcTransfer() {
+	var num = 0;
+	for (var i = 0; i < sigma.size(); i++) {
+		num *= sigma[i] * -1;
 	}
 }
 
