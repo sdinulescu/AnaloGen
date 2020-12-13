@@ -68,9 +68,13 @@ function calcOmega(N, E) { //calculate omega(k)
 }
 
 function calcTransfer() {
-	var num = 0;
+	var num = 0; // this will be the one feedback coeff for cheby
+	var den =0;
 	for (var i = 0; i < sigma.size(); i++) {
-		num *= sigma[i] * -1;
+		num *= -1 * (sigma[i] + Math.sq(-1) * omega[i]);
+	}
+	for (var i = 0; i < omega.size(); i++) {
+		
 	}
 }
 
