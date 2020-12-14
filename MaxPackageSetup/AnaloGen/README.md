@@ -1,5 +1,5 @@
 # AnaloGen
-Authored by Stejara Dinulescu, 2020
+Authored by Stejara Dinulescu, 2020.
 For any questions or installation help, please email sdinulescu@ucsb.edu. 
 
 
