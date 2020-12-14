@@ -1,0 +1,191 @@
+{
+	"patcher" : 	{
+		"fileversion" : 1,
+		"appversion" : 		{
+			"major" : 8,
+			"minor" : 1,
+			"revision" : 6,
+			"architecture" : "x64",
+			"modernui" : 1
+		}
+,
+		"classnamespace" : "dsp.gen",
+		"rect" : [ 1972.0, 146.0, 1518.0, 740.0 ],
+		"bglocked" : 0,
+		"openinpresentation" : 0,
+		"default_fontsize" : 12.0,
+		"default_fontface" : 0,
+		"default_fontname" : "Arial",
+		"gridonopen" : 1,
+		"gridsize" : [ 15.0, 15.0 ],
+		"gridsnaponopen" : 1,
+		"objectsnaponopen" : 1,
+		"statusbarvisible" : 2,
+		"toolbarvisible" : 1,
+		"lefttoolbarpinned" : 0,
+		"toptoolbarpinned" : 0,
+		"righttoolbarpinned" : 0,
+		"bottomtoolbarpinned" : 0,
+		"toolbars_unpinned_last_save" : 0,
+		"tallnewobj" : 0,
+		"boxanimatetime" : 200,
+		"enablehscroll" : 1,
+		"enablevscroll" : 1,
+		"devicewidth" : 0.0,
+		"description" : "",
+		"digest" : "",
+		"tags" : "",
+		"style" : "",
+		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
+		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-34",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1007.0, 43.0, 75.0, 20.0 ],
+					"text" : "order (I or II)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1008.0, 65.0, 28.0, 22.0 ],
+					"text" : "in 3"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-31",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 79.0, 707.0, 258.0, 33.0 ],
+					"text" : "recursive function: \nnextT(x) = 2 * input_signal * T(x) - previousT(x)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 79.0, 676.0, 389.0, 20.0 ],
+					"text" : "I can really only do these out by hand... Max does not support recursion"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"code" : "T = 0;\r\n\r\nif (in3 == 1) {\r\n\tif (in2 == 0) {\r\n\t\tT = 1;\r\n\t} else if (in2 == 1) {\r\n\t\tT = in1;\r\n\t} else if (in2 == 2) {\r\n\t\tT = 2 * pow(in1, 2) - 1;\r\n\t} else if (in2 == 3) {\r\n\t\tT = 4 * pow(in1, 3) - 3 * in1;\r\n\t} else if (in2 == 4) {\r\n\t\tT = 8 * pow(in1, 4) - 8 * pow(in1, 2) + 1;\r\n\t} else if (in2 == 5 ) {\r\n\t\tT = 16 * pow(in1, 5) - 20 * pow(in1, 3) + 5 * in1;\r\n\t} else if (in2 == 6) {\r\n\t\tT = 32 * pow(in1, 4) - 48 * pow(in1, 2) + 18 * pow(in1, 2) - 1;\r\n\t} else if (in2 == 7) {\r\n\t\tT = 64 * pow(in1, 7) - 112 * pow(in1, 5) + 56 * pow(in1, 3) - 7 * in1;\r\n\t} else if (in2 == 8) {\r\n\t\tT = 128 * pow(in1, 8) - 256 * pow(in1, 6) + 160 * pow(in1, 4) - 32 * pow(in1, 2) + 1;\r\n\t} else if (in2 == 9) {\r\n\t\tT = 256 * pow(in1, 9) - 576 * pow(in1, 7) + 432 * pow(in1, 5) - 120 * pow(in1, 3) + 9*in1;\r\n\t} else if (in2 == 10) {\r\n\t\tT = 512 * pow(in1, 10) - 1280 * pow(in1, 8) + 1120 * pow(in1, 6) - 400 * pow(in1, 4) + 50 * pow(in1, 2) - 1;\r\n\t};\r\n} else {\r\n\tif (in2 == 0) {\r\n\t\tT = 1;\r\n\t} else if (in2 == 1) {\r\n\t\tT = 2 * in1;\r\n\t} else if (in2 == 2) {\r\n\t\tT = 4 * pow(in1, 2) - 1;\r\n\t} else if (in2 == 3) {\r\n\t\tT = 8 * pow(in1, 3) - 4 * in1;\r\n\t} else if (in2 == 4) {\r\n\t\tT = 16 * pow(in1, 4) - 12 * pow(in1, 2) + 1;\r\n\t} else if (in2 == 5 ) {\r\n\t\tT = 32 * pow(in1, 5) - 32 * pow(in1, 3) + 6 * in1;\r\n\t} else if (in2 == 6) {\r\n\t\tT = 64 * pow(in1, 4) - 80 * pow(in1, 2) + 24 * pow(in1, 2) - 1;\r\n\t} else if (in2 == 7) {\r\n\t\tT = 128 * pow(in1, 7) - 192 * pow(in1, 5) + 80 * pow(in1, 3) - 8 * in1;\r\n\t} else if (in2 == 8) {\r\n\t\tT = 256 * pow(in1, 8) - 448 * pow(in1, 6) + 240 * pow(in1, 4) - 40 * pow(in1, 2) + 1;\r\n\t} else if (in2 == 9) {\r\n\t\tT = 512 * pow(in1, 9) - 1024 * pow(in1, 7) + 672 * pow(in1, 5) - 160 * pow(in1, 3) + 10*in1;\r\n\t};\r\n};\r\nout1 = T;",
+					"fontface" : 0,
+					"fontname" : "<Monospaced>",
+					"fontsize" : 12.0,
+					"id" : "obj-20",
+					"maxclass" : "codebox",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 53.0, 166.0, 974.0, 505.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 531.0, 40.0, 149.0, 20.0 ],
+					"text" : "nth Chebyshev polynomial"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 53.0, 40.0, 69.0, 20.0 ],
+					"text" : "input signal"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 53.0, 65.0, 28.0, 22.0 ],
+					"text" : "in 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-2",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 531.0, 65.0, 28.0, 22.0 ],
+					"text" : "in 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 53.0, 782.0, 35.0, 22.0 ],
+					"text" : "out 1"
+				}
+
+			}
+ ],
+		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 0 ],
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 1 ],
+					"source" : [ "obj-2", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-20", 2 ],
+					"source" : [ "obj-32", 0 ]
+				}
+
+			}
+ ]
+	}
+
+}
