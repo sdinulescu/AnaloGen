@@ -6,7 +6,7 @@ Please consult the AnaloGen package README.md file for installation and further 
 ## Filter Types
 - Moog (implemented Oct 28 2020, added Nov 5 2020)
 - Second Order Butterworth (implemented Nov 5 2020)
-- Biquad (implemented Nov 15 2020)
+- Biquad: direct form one and direct form two (implemented Nov 15 2020)
 - Comb: feedforward (in progress) and feedback (implemented Nov 19 2020)
 
 ## Potential Filters To Implement
