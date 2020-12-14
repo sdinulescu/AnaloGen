@@ -1,4 +1,5 @@
 // This .js file computes the poles for a Chebyshev Type 1 filter
+include("math.js");
 
 // user-specified parameters (inlets):
 // N (order), ripple (E), stopband attenuation parameter (Op)
@@ -10,6 +11,7 @@ var Op;
 // s(k) = sigma(k) + jw(k) -> function for calculating the poles
 var sigma; 
 var omega; 
+var s;
 
 // outlets: pole values (stored in an array), where number of poles (k) = 2 * N
 outlets = 2; // s(k) array, referred to as poles[index] in this file
@@ -19,6 +21,7 @@ function bang()
 	// this needs to be called every time an input is changed (recalculate)
 	sigma = new Array(2 * N); //make an empty array of size k (2 * N) to store sigma vals
 	omega = new Array(2 * N); //make an empty array of size k (2 * N) to store omega vals
+	s = new Array(2 * N);
 	
 	calcSigma(N, E);
 	calcOmega(N, E);
@@ -29,13 +32,13 @@ function bang()
 }
 
 function msg_int(v) { //int callback function (called anytime left inlet, i.e. N, is changed)
-	post("received int " + v + "\n");
+	//post("received int " + v + "\n");
 	N = v;
 	bang();
 }
 
 function msg_float(v) { //float callback function (called any time inlets 2 and 3 are changed)
-	post("received float " + v + "\n");
+	//post("received float " + v + "\n");
 	switch(inlet) {
 		case 2: // if Op is changed
 			post("inlet 3: " + v + "\n");
@@ -68,14 +71,23 @@ function calcOmega(N, E) { //calculate omega(k)
 }
 
 function calcTransfer() {
-	var num = 0; // this will be the one feedback coeff for cheby
-	var den =0;
+	//test math.js complex numbers
+	//for (var i = 0; i < sigma.length; i++) {
+		//post(math.complex(sigma[i], omega[i]));
+	//}
+	
+	num = 0; // this will be the one feedback coeff for cheby
 	for (var i = 0; i < sigma.size(); i++) {
-		num *= -1 * (sigma[i] + Math.sq(-1) * omega[i]);
+		var _s = math.complex(sigma[i], omega[i]);
+		s[i] = _s; // these are all the s's (s1, s2, s3, ... sN)
+		num *= -1 * _s;
 	}
-	for (var i = 0; i < omega.size(); i++) {
-		
-	}
+	//now, num = the numerator of the transfer function, which will be a number (possibly/probably complex)
+	//s array stores the s values. Now, the denominator of the transfer function looks like: (s-s[1])(s-s2)(s-s3)...(s-sN)
+	
+	// -- now how do i foil out the factored polynomial? I need to get: a0*s^N + a1*s^(N-1) + a2*s^(N-2) ... + aN*s^0
+	//where a0 = 1, a1, a2, a3 etc. are the feedforward coefficients of the filter. 
+	//then, we should be able to create a filter in the max patch using filtergraph
 }
 
 function sinh(x) {
