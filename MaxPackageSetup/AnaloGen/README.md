@@ -25,7 +25,7 @@ AnaloGen follows the common Max Package conventions. There are 2 folders that ar
 2. butterworth-filter.maxpat: this is an example patcher that implements lowpass, highpass, and bandpass second-order butterworth filters.
 3. comb-feedback-filter.maxpat: this is an example patcher that implements a feedback comb filter, using the feedback comb filter differential equation.
 4. moog-ladder-filter.maxpat: this is an example patcher that implements a Moog ladder filter, built using 4 compromised-one-pole filters (see following section for more information, as well as the reference material inside the example patcher).
-5. diode-ladder-filter.maxpat: this is an example patcher that implements a Diode ladder filter, built using 4 one-pole lowpass filters
+5. diode-ladder-filter.maxpat: this is an example patcher that implements two kinds of Diode ladder filters, one built using 4 one-pole lowpass filters and the other built by adding a one-pole highpass filter after each lowpass filter in the ladder structure. See reference for more information.
 
 <u>Waveshapers:</u> 
 
@@ -43,6 +43,8 @@ In order to create your own AnaloGen object, create a Max object in a patcher an
 - comb-feedback: this is a feedback comb filter.
 - compromised-one-pole: this is a special case of a one-pole filter, used in the Moog Ladder filter implementation. This can be used as its own filter object as well. 
 - moog: this is a Moog ladder filter implementation, using 4 compromised-one-pole filters in a ladder orientation. The Moog ladder filter implementation can be manipulated to contain less than 4 or more than 4 compromised-one-pole-filters, up to the user's discretion. The Moog example file contains the reference that explains these possibilities.
+- diode: this is a diode ladder filter implementation, built using 4 one-pole lowpass filters.
+- diode-lowpass-highpass: this is a diode ladder filter implementation, built using a 4 ladders of a one-pole lowpass filter followed by a one-pole highpass filter. See diode-filter example patch for more details.
 - lowpass: this is a one-pole lowpass filter, with one feedforward and one feedback coefficient as input. Used in the Diode Ladder filter implementation.
 - highpass: this is a one-pole highpass filter, with one feedforward and one feedback coefficient as input.
 

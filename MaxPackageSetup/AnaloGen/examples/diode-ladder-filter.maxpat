@@ -40,6 +40,203 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 23.0, 623.0, 200.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 24.0, 621.0, 200.0, 20.0 ],
+					"text" : "Diode lowpass and highpass design"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"autofit" : 1,
+					"forceaspect" : 1,
+					"id" : "obj-27",
+					"maxclass" : "fpic",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "jit_matrix" ],
+					"patching_rect" : [ 18.0, 614.0, 561.379032258064285, 237.692326911331861 ],
+					"pic" : "/Users/stejaraiulia/Desktop/Screen Shot 2020-12-16 at 11.29.09 PM.png",
+					"presentation" : 1,
+					"presentation_rect" : [ 18.0, 614.0, 561.379032258064285, 237.692326911331861 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"hidden" : 1,
+					"id" : "obj-1",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1121.0, 580.0, 119.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1121.0, 580.0, 119.0, 20.0 ],
+					"text" : "a lowpass coefficient"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-10",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 965.0, 580.0, 119.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 965.0, 580.0, 119.0, 20.0 ],
+					"text" : "b lowpass coefficient"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-11",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 653.0, 676.378196500672857, 487.0, 22.0 ],
+					"text" : "gen~ diode-lowpass-highpass"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-14",
+					"maxclass" : "spectroscope~",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 706.0, 728.0, 300.0, 100.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-16",
+					"maxclass" : "flonum",
+					"maximum" : 0.55,
+					"minimum" : 0.01,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1121.0, 606.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1121.0, 606.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-17",
+					"maxclass" : "flonum",
+					"maximum" : 0.55,
+					"minimum" : 0.01,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 965.0, 606.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 965.0, 606.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "ezdac~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 653.0, 959.0, 45.0, 45.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 653.0, 806.692326911331747, 45.0, 45.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "gain~",
+					"multichannelvariant" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 653.0, 790.0, 22.0, 140.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 653.0, 648.0, 518.0, 140.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 653.0, 580.0, 35.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 653.0, 580.0, 35.0, 20.0 ],
+					"text" : "input"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 809.0, 580.0, 47.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 809.0, 580.0, 47.0, 20.0 ],
+					"text" : "k value"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"format" : 6,
+					"id" : "obj-25",
+					"maxclass" : "flonum",
+					"maximum" : 3.9,
+					"minimum" : -3.9,
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 809.0, 606.0, 50.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 809.0, 606.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 653.0, 606.0, 44.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 653.0, 606.0, 44.0, 22.0 ],
+					"text" : "noise~"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"hidden" : 1,
 					"id" : "obj-13",
 					"maxclass" : "comment",
@@ -281,6 +478,36 @@
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
+					"destination" : [ "obj-14", 0 ],
+					"order" : 0,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"order" : 1,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 3 ],
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 2 ],
+					"source" : [ "obj-17", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-20", 1 ],
 					"order" : 0,
 					"source" : [ "obj-19", 0 ]
@@ -292,6 +519,36 @@
 					"destination" : [ "obj-20", 0 ],
 					"order" : 1,
 					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 1 ],
+					"order" : 0,
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"order" : 1,
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 1 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
@@ -359,6 +616,20 @@
 				"bootpath" : "~/GitHub/AnaloGen/DiodeLadderFilter",
 				"patcherrelativepath" : "../../../DiodeLadderFilter",
 				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "diode-lowpass-highpass.gendsp",
+				"bootpath" : "~/GitHub/AnaloGen/MaxPackageSetup/AnaloGen/code",
+				"patcherrelativepath" : "../code",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Screen Shot 2020-12-16 at 11.29.09 PM.png",
+				"bootpath" : "~/Desktop",
+				"patcherrelativepath" : "../../../../../Desktop",
+				"type" : "PNG",
 				"implicit" : 1
 			}
  ],
