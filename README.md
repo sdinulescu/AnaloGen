@@ -5,10 +5,13 @@ Please consult the AnaloGen package README.md file for installation and further 
 
 ## Filter Types
 - Moog Ladder (implemented Oct 28 2020, added Nov 5 2020)
-- Second Order Butterworth (implemented Nov 5 2020): lowpass, highpass, bandpass
+  - Compromised one-pole filter
+- Second Order Butterworth (implemented Nov 5 2020): lowpass, highpass, bandpass parameter options
 - Biquad: direct form one and direct form two (implemented Nov 15 2020)
 - Comb: feedforward (in progress) and feedback (implemented Nov 19 2020)
 - Diode Ladder (implemented Dec 16 2020): 4 one-pole lowpass implementation, 4 one-pole lowpass then one-pole highpass implementation
+  - One-pole lowpass filter
+  - One-pole highpass filter
 
 ## Potential Filters To Implement
 - Elliptic (Cauer)
